@@ -1,0 +1,5 @@
+1234567890123|Naruto|Masashi Kishimoto|1999|2014|Shonen|Shonen Jump|Shueisha|2000|72|10|1 2 3 4 5 6 7 8 9 10|
+2345678901234|One Piece|Eiichiro Oda|1997|2024|Shonen|Shonen Jump|Shueisha|1998|100|5|1 2 3 4 5|
+3456789012345|Bleach|Tite Kubo|2001|2016|Shonen|Shonen Jump|Shueisha|2002|74|7|1 2 3 4 5 6 7|
+4567890123456|Attack on Titan|Hajime Isayama|2009|2021|Shonen|Bessatsu Shonen Magazine|Kodansha|2010|34|3|1 2 3|
+5678901234567|Death Note|Tsugumi Ohba|2003|2006|Shonen|Shonen Jump|Shueisha|2004|12|4|1 2 3 4|
