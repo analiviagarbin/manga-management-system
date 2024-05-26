@@ -7,9 +7,11 @@ void addManga();
 void listMangas();
 void updateManga();
 void deleteManga();
+void saveData(Manga manga);
+void searchByIndex(int recordNumber);
 void savePrimaryIndex();
 void saveSecondaryIndex();
-void saveData();
-void loadData();
+void searchByPrimaryIndex(char *ISBN);
+void searchBySecondaryIndex(char *title);
 
 #endif

@@ -17,9 +17,8 @@ void menu() {
         printf("2. List Mangas\n");
         printf("3. Update Manga\n");
         printf("4. Delete Manga\n");
-        printf("5. Save Data\n");
-        printf("6. Load Data\n");
-        printf("7. Exit\n");
+        printf("5. Search Manga by Index\n");
+        printf("6. Exit\n");
         printf("What are we doing today? ");
         scanf("%d", &c);
         getchar(); // consume newline character left by scanf
@@ -29,17 +28,21 @@ void menu() {
             case 2: listMangas(); break;
             case 3: updateManga(); break;
             case 4: deleteManga(); break;
-            case 5: saveData(); break;
-            case 6: loadData(); break;
-            case 7: printf("Bye bye...\n"); break;
+            case 5: {
+                int recordNumber;
+                printf("Enter record number to search: ");
+                scanf("%d", &recordNumber);
+                getchar(); // consume newline character left by scanf
+                searchByIndex(recordNumber);
+                break;
+            }
+            case 6: printf("Bye bye...\n"); break;
             default: printf("Invalid choice, try again.\n");
         }
-    } while (c != 7);
+    } while (c != 6);
 }
 
 int main() {
-    loadData();
     menu();
-    saveData();
     return 0;
 }
