@@ -54,25 +54,7 @@ void listMangas() {
                    m.genre, m.magazine, m.publisher, &m.editionYear,
                    &m.totalVolumes, &m.acquiredVolumes);
             
-            printf("ISBN: %s\n", m.ISBN);
-            printf("Title: %s\n", m.title);
-            printf("Author: %s\n", m.author);
-            printf("Start Year: %d\n", m.startYear);
-            printf("End Year: %d\n", m.endYear);
-            printf("Genre: %s\n", m.genre);
-            printf("Magazine: %s\n", m.magazine);
-            printf("Publisher: %s\n", m.publisher);
-            printf("Edition Year: %d\n", m.editionYear);
-            printf("Total Volumes: %d\n", m.totalVolumes);
-            printf("Acquired Volumes: %d\n", m.acquiredVolumes);
-            printf("Acquired Volume List: ");
-            for (int i = 0; i < m.acquiredVolumes; i++) {
-                int vol;
-                if (sscanf(buffer, "%*[^|]|%*[^|]|%*[^|]|%*d|%*d|%*[^|]|%*[^|]|%*[^|]|%*d|%*d|%*d|%d", &vol) == 1) {
-                    printf("%d ", vol);
-                }
-            }
-            printf("\n\n");
+            printf("\nISBN: %s, Title: %s\n", m.ISBN, m.title);
         }
         fclose(file);
     } else {
