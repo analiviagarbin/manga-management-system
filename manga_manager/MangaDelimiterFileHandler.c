@@ -152,12 +152,22 @@ void deleteManga() {
         fclose(tempFile);
 
         if (found) {
-            remove("mangas.txt");
-            rename("temp.txt", "mangas.txt");
-            savePrimaryIndex();
-            saveSecondaryIndex();
-            printf("Manga deleted successfully.\n");
-        } else {
+            printf("Are you sure you want to delete? (y|Y/n): ");
+            char confirm;
+            scanf(" %c", &confirm);
+            getchar();
+
+            if (confirm == 'y' || confirm == 'Y') {
+                remove("mangas.txt");
+                rename("temp.txt", "mangas.txt");
+                savePrimaryIndex();
+                saveSecondaryIndex();
+                printf("Manga deleted successfully.\n");
+            } else {
+                printf("Deletion cancelled.\n");
+            }
+            
+            } else {
             remove("temp.txt");
             printf("You don't have this manga in your library yet!\n");
         }
